@@ -20,9 +20,13 @@ public class Client {
             Sender sender = new Sender(pw);
             listener.start();
             sender.start();
+            listener.join();
+            sender.join();
         } catch (IOException e) {
             System.out.println("Ошибка инициализации клиента");
-        }finally {
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             try {
                 socket.close();
             } catch (IOException e) {
