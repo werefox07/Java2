@@ -1,8 +1,7 @@
-package ru.geekbrains.lesson6a;
+package ru.geekbrains.lesson6;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Sender extends Thread{

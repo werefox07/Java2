@@ -1,8 +1,7 @@
-package ru.geekbrains.lesson6a;
+package ru.geekbrains.lesson6;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Listener extends Thread {
     private DataInputStream sc;
