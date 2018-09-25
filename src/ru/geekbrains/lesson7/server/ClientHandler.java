@@ -25,7 +25,7 @@ public class ClientHandler {
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
             new Thread(new Runnable() {
-                
+
                 public void handleAuth() throws IOException {
                     while (true) {
                         String msg = in.readUTF();
